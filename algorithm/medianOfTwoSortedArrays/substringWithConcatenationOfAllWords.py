@@ -14,7 +14,7 @@ You should return the indices: [0,9].
 
 0 1 2 3 4 5
 L = 2
-N = 6 
+N = 6
 """
 class Solution:
     # @param {string} s
