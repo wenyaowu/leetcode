@@ -26,14 +26,11 @@ class Solution(object):
         	if nums[v_index]<nums[v_index+1]:
         		break
         	v_index-=1
-        
         r_index = len(nums)-1
-
         if v_index>=0:
             while r_index>0:
                 if nums[r_index]>nums[v_index]: break
                 r_index-=1
                 
         nums[r_index], nums[v_index] = nums[v_index], nums[r_index]
-
         nums[v_index+1:] = nums[v_index+1:][::-1]
