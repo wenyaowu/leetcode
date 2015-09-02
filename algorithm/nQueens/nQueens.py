@@ -29,7 +29,7 @@ class Solution:
     def solveNQueens(self, n):
     	self.res = []
     	self.solveNQueensHelper(n, 0, [])
-    	return self.res
+    	return len(self.res)
     def solveNQueensHelper(self, n, row, cols):
     	if row==n: #Append result
     		temp =  [['.' for x in range(n)] for x in range(n)]
