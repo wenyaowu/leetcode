@@ -23,18 +23,18 @@ class Solution:
     	res = ''
     	nums = [x for x in range(1,n+1)]
     	comb = self.fac(n-1)
-    	while len(nums)>0:
+    	while len(nums)>1:
     		group = k/comb
     		k%=comb
     		if k==0:
     			group -= 1
     			k = comb
-    		com/=len(nums)
     		res += str(nums.pop(group))
+    		comb/=len(nums)
     	return res + str(nums.pop())
 
     def fac(self, n):
     	res = 1
-    	for i in range(1,n):
+    	for i in range(1,n+1):
     		res*=i
-    	return 
+    	return res
